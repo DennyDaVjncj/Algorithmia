@@ -6,7 +6,7 @@ const sortInputArray = (event) => {
   const inputValues = [
     ...document.getElementsByClassName("values-dropdown")
   ].map((dropdown) => Number(dropdown.value));
-
+  
   updateUI(inputValues);
   // bubbleSort()
 }
@@ -15,6 +15,7 @@ const updateUI = (array = []) => {
   array.forEach((num, i) => {
     const outputValueNode = document.getElementById(`output-value-${i}`);
     outputValueNode.innerText = num;
+    console.log(i);
   })
 }
 
@@ -24,4 +25,4 @@ const bubbleSort=(array)=>{
     for(let j=0;j<array.length;j++){}
   }
 }
-sortButton.addEventListener('click',sortInputArray);
+sortButton.addEventListener('click',sortInputArray);//our web app is now programmed to watch for a click event on a chosen element on our UI
