@@ -8,7 +8,7 @@ const sortInputArray = (event) => {
   ].map((dropdown) => Number(dropdown.value));
   
   updateUI(inputValues);
-  // bubbleSort()
+  botSorting()
 }
 
 const updateUI = (array = []) => {
