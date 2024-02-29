@@ -8,7 +8,7 @@ const sortInputArray = (event) => {
   ].map((dropdown) => Number(dropdown.value));
   
   updateUI(inputValues);
-  botSorting()
+  botSorting(array)
 }
 
 const updateUI = (array = []) => {
@@ -19,7 +19,6 @@ const updateUI = (array = []) => {
   })
 }
 
-//tentative logic
 const botSorting=(array)=>{
   for(let i=0;i<array.length-1;i++){
     for(let j=0;j<array.length;j++){}
