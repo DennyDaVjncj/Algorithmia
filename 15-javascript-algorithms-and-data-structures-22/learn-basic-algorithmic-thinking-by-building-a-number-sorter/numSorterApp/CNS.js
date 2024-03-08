@@ -8,20 +8,21 @@ const sortInputArray = (event) => {
   ].map((dropdown) => Number(dropdown.value));
   
   updateUI(inputValues);
-  botSorting(array)
+  // botSorting(array)
 }
 
 const updateUI = (array = []) => {
   array.forEach((num, i) => {
     const outputValueNode = document.getElementById(`output-value-${i}`);
     outputValueNode.innerText = num;
-    console.log(i);
   })
 }
 
-const botSorting=(array)=>{
-  for(let i=0;i<array.length-1;i++){
-    for(let j=0;j<array.length;j++){}
+const botSorting=(ml)=>{
+  for(let i=0;i<ml.length-1;i++){
+    for(let j=0;j<ml.length;j++){
+      console.log(ml,ml[j],ml[j+1])
+    }
   }
 }
 sortButton.addEventListener('click',sortInputArray);//our web app is now programmed to watch for a click event on a chosen element on our UI
