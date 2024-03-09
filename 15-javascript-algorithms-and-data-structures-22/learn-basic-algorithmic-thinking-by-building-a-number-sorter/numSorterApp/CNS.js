@@ -7,9 +7,9 @@ const sortInputArray = (event) => {
     ...document.getElementsByClassName("values-dropdown")
   ].map((dropdown) => Number(dropdown.value));
 
-  const preparedLogic=botSorting(inputValues);
+  // const preparedLogic=botSorting(inputValues);
   
-  updateUI(preparedLogic);
+  updateUI(inputValues);
   // botSorting(ml)
 }
 
