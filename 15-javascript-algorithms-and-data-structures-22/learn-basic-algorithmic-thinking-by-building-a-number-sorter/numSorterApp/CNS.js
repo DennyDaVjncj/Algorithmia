@@ -31,5 +31,6 @@ const botSorting=(ml)=>{
 sortButton.addEventListener('click',sortInputArray);//our web app is now programmed to watch for a click event on a chosen element on our UI
 
 /**
- * Now on step 16
+ * Now on step 18
+ * analyzing the bot sorting algorithm functionality
  */
