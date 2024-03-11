@@ -24,7 +24,7 @@ const botSorting=(ml)=>{
   for(let i=0;i<ml.length-1;i++){
     for(let j=0;j<ml.length;j++){
       console.log(ml,ml[j],ml[j+1])
-      if([j]>[j]+1){}
+      if(ml[j]>ml[j+1]){}
     }
   }
 }
