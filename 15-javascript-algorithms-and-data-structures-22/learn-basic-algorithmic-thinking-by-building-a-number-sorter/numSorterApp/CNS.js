@@ -3,14 +3,14 @@ const sortButton = document.getElementById("sort");//initial DOM target. This ta
 const sortInputArray = (event) => {
   event.preventDefault();
 
-  const inputValues = [
+  const uiUX = [
     ...document.getElementsByClassName("values-dropdown")
   ].map((dropdown) => Number(dropdown.value));
 
   // const preparedLogic=botSorting(inputValues);
   
-  updateUI(inputValues);
-  // botSorting(ml)
+  const organizedChaos=botSorting(uiUX)
+  updateUI(uiUX);
 }
 
 const updateUI = (array = []) => {
