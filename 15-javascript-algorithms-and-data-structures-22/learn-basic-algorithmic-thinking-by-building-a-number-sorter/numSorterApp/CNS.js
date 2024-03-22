@@ -10,7 +10,7 @@ const sortInputArray = (event) => {
   // const preparedLogic=botSorting(inputValues);
   
   const organizedChaos=botSorting(uiUX)
-  updateUI(uiUX);
+  updateUI(organizedChaos);
 }
 
 const updateUI = (dataStructure = []) => {
