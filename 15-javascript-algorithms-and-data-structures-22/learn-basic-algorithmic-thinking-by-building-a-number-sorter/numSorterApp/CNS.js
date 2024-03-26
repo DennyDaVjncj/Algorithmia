@@ -20,11 +20,11 @@ const updateUI = (dataStructure = []) => {
   })
 }
 
-const botSorting=(ml)=>{
-  for(let i=0;i<ml.length-1;i++){
-    for(let j=0;j<ml.length;j++){
-      console.log(ml,ml[j],ml[j+1])
-      if(ml[j]>ml[j+1]){}
+const botSorting=(userSelects)=>{
+  for(let i=0;i<userSelects.length-1;i++){
+    for(let j=0;j<userSelects.length;j++){
+      console.log(userSelects,userSelects[j],userSelects[j+1])
+      if(userSelects[j]>userSelects[j+1]){}
     }
   }
 }
