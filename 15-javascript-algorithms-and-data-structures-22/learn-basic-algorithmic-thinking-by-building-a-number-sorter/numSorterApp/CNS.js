@@ -13,8 +13,8 @@ const sortInputArray = (event) => {
   updateUI(sortedSlctns);
 }
 
-const updateUI = (dataStructure = []) => {
-  dataStructure.forEach((num, i) => {
+const updateUI = (slctnsArray = []) => {
+  slctnsArray.forEach((num, i) => {
     const outputValueNode = document.getElementById(`output-value-${i}`);
     outputValueNode.innerText = num;
   })
