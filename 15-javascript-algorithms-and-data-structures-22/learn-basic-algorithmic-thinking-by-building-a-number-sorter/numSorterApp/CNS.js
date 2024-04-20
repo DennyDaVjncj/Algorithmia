@@ -20,11 +20,11 @@ const updateUI = (slctnsArray = []) => {
   })
 }
 
-const botSorting=(userSelects)=>{
-  for(let i=0;i<userSelects.length;i++){
-    for(let j=0;j<userSelects.length-1;j++){
-      console.log(userSelects,userSelects[j],userSelects[j+1])
-      if(userSelects[j]>userSelects[j+1]){}
+const botSorting=(userRqsts)=>{
+  for(let i=0;i<userRqsts.length;i++){
+    for(let j=0;j<userRqsts.length-1;j++){
+      console.log(userRqsts,userRqsts[j],userRqsts[j+1])
+      if(userRqsts[j]>userRqsts[j+1]){}
     }
   }
 }
