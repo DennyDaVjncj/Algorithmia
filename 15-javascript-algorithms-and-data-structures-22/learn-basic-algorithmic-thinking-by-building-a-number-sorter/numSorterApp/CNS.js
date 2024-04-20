@@ -21,8 +21,8 @@ const updateUI = (dataStructure = []) => {
 }
 
 const botSorting=(userSelects)=>{
-  for(let i=0;i<userSelects.length-1;i++){
-    for(let j=0;j<userSelects.length;j++){
+  for(let i=0;i<userSelects.length;i++){
+    for(let j=0;j<userSelects.length-1;j++){
       console.log(userSelects,userSelects[j],userSelects[j+1])
       if(userSelects[j]>userSelects[j+1]){}
     }
