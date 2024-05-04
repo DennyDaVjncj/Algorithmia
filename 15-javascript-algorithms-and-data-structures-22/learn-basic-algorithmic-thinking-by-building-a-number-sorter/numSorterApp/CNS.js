@@ -26,6 +26,9 @@ const botSorting=(userRqsts)=>{
       console.log(userRqsts,userRqsts[j],userRqsts[j+1])
       if(userRqsts[j]>userRqsts[j+1]){
         var currentUsrSlctn=userRqsts[j];
+        var greaterVal=userRqsts[j+1];
+
+        currentUsrSlctn=greaterVal;
         
       }
     }
