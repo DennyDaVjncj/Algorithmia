@@ -9,8 +9,8 @@ const sortInputArray = (event) => {
 
   // const preparedLogic=botSorting(inputValues);
   
-  const sortedSlctns=botSorting(userSlctns)
-  updateUI(sortedSlctns);
+  botSorting(userSlctns)
+  updateUI(userSlctns);
 }
 
 const updateUI = (slctnsArray = []) => {
