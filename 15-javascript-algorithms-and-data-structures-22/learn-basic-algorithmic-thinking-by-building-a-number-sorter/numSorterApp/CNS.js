@@ -39,4 +39,5 @@ sortButton.addEventListener('click',sortInputArray);//our web app is now program
 /**
  * step 19
  * now configuring the swap logic
+ * sortInput Array updated with corrected argument for hoisted functions
  */
