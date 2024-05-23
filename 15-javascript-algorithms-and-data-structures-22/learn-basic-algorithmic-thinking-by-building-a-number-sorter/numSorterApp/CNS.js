@@ -14,7 +14,7 @@ const sortInputArray = (event) => {
 }
 
 const updateUI = (slctnsArray = []) => {
-  slctnsArray.forEach((num, i) => {
+  slctnsArray.forEach((i, num) => {
     const outputValueNode = document.getElementById(`output-value-${i}`);
     outputValueNode.innerText = num;
   })
