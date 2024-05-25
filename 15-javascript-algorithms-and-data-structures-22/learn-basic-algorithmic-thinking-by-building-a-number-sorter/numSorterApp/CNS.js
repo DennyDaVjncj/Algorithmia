@@ -4,8 +4,9 @@ const sortInputArray = (event) => {
   event.preventDefault();
 
   const userSlctns = [
-    ...document.getElementsByClassName("values-dropdown")
+    ...document.getElementsByClassName("userSlctns")
   ].map(dropdown => Number(dropdown.value));
+  console.log(userSlctns)
 
   // const preparedLogic=botSorting(inputValues);
   
