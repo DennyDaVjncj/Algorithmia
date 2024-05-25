@@ -10,13 +10,13 @@ const sortInputArray = (event) => {
   // const preparedLogic=botSorting(inputValues);
   
   var sortedVals=botSorting(userSlctns)
-  updateUI(sortedVals);
+  updateUI(userSlctns);
 }
 
 const updateUI = (slctnsArray = []) => {
   slctnsArray.forEach((i, num) => {
     const outputValueNode = document.getElementById(`output-value-${i}`);
-    outputValueNode.innerText = num;
+    outputValueNode.innerText = slctnsArray[i];
   })
 }
 
