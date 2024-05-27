@@ -11,22 +11,32 @@ const sortInputArray = (event) => {
   // const preparedLogic=botSorting(inputValues);
   
   var sortedVals=botSorting(userSlctns)
-  updateUI(userSlctns);
+  updateUI(sortedVals);
 }
 
 const updateUI = (slctnsArray = []) => {
-  slctnsArray.forEach((i, num) => {
+  slctnsArray.forEach((num, i) => {
     const outputValueNode = document.getElementById(`output-value-${i}`);
+    console.log(outputValueNode)
     outputValueNode.innerText = slctnsArray[i];
   })
 }
 
+
 const botSorting=(userRqsts=[])=>{
+  /**
+   * Lucius
+   * currentUsrSlctn hold temp value
+   */
+  var currentUsrSlctn=0;
   for(let i=0;i<userRqsts.length;i++){
-    for(let j=0;j<userRqsts.length-1;j++){
-      console.log(userRqsts,userRqsts[j],userRqsts[j+1])
-      if(userRqsts[j]>userRqsts[j+1]){
-        // var currentUsrSlctn=userRqsts[j];
+    for(let j=1;j<userRqsts.length-1;j++){
+      console.log(userRqsts,userRqsts[j],userRqsts[j])
+      if(userRqsts[i]>userRqsts[j]){
+        currentUsrSlctn=userRqsts[i];
+        userRqsts[i]=userRqsts[j]
+        userRqsts[j]=currentUsrSlctn
+        console.log(userRqsts[i],userRqsts[j])
         // var greaterVal=userRqsts[j+1];
 
         // currentUsrSlctn=greaterVal;
@@ -34,6 +44,8 @@ const botSorting=(userRqsts=[])=>{
       }
     }
   }
+
+  return userRqsts;
 }
 sortButton.addEventListener('click',sortInputArray);//our web app is now programmed to watch for a click event on a chosen element on our UI
 
