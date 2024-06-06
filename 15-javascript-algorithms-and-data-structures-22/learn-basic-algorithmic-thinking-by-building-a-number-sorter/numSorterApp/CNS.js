@@ -15,10 +15,10 @@ const sortInputArray = (event) => {
 }
 
 const updateUI = (slctnsArray = []) => {
-  slctnsArray.forEach((num, i) => {
-    const outputValueNode = document.getElementById(`output-value-${i}`);
-    console.log(outputValueNode)
-    outputValueNode.innerText = slctnsArray[i];
+  slctnsArray.forEach((num,i) => {
+    const outputValueNode = document.getElementById(`output-value-${num}`);
+    console.log(i)
+    outputValueNode.innerText = slctnsArray[num];
   })
 }
 
