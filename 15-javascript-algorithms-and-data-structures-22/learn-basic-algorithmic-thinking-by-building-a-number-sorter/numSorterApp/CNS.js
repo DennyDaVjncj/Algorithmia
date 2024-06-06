@@ -6,12 +6,11 @@ const sortInputArray = (event) => {
   const userSlctns = [
     ...document.getElementsByClassName("userSlctns")
   ].map(dropdown => Number(dropdown.value));
-  console.log(userSlctns)
-
-  // const preparedLogic=botSorting(inputValues);
   
   var sortedVals=botSorting(userSlctns)
   updateUI(sortedVals);
+  console.log(outputValueNode)
+  console.log(outputValueNode.innerText)
 }
 
 const updateUI = (slctnsArray = []) => {
