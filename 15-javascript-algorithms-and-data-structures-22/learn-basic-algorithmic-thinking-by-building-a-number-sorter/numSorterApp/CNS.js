@@ -9,16 +9,17 @@ const sortInputArray = (event) => {
   
   var sortedVals=botSorting(userSlctns)
   updateUI(sortedVals);
-  console.log(outputValueNode)
-  console.log(outputValueNode.innerText)
+  // console.log(outputValueNode)
+  // console.log(outputValueNode.innerText)
 }
 
 const updateUI = (slctnsArray = []) => {
   slctnsArray.forEach((num,i) => {
     const outputValueNode = document.getElementById(`output-value-${num}`);
-    console.log(i)
+    // console.log(num)
     outputValueNode.innerText = slctnsArray[i];
   })
+  console.log(outputValueNode)
 }
 
 
@@ -30,12 +31,12 @@ const botSorting=(userRqsts=[])=>{
   var currentUsrSlctn=0;
   for(let i=0;i<userRqsts.length;i++){
     for(let j=1;j<userRqsts.length-1;j++){
-      console.log(userRqsts,userRqsts[j],userRqsts[j])
+      // console.log(userRqsts,userRqsts[j],userRqsts[j])
       if(userRqsts[i]>userRqsts[j]){
         currentUsrSlctn=userRqsts[i];
         userRqsts[i]=userRqsts[j]
         userRqsts[j]=currentUsrSlctn
-        console.log(userRqsts[i],userRqsts[j])
+        // console.log(userRqsts[i],userRqsts[j])
         // var greaterVal=userRqsts[j+1];
 
         // currentUsrSlctn=greaterVal;
