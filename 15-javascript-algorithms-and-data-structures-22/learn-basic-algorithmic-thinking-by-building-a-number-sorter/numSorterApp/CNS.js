@@ -18,8 +18,8 @@ const updateUI = (slctnsArray = []) => {
     const outputValueNode = document.getElementById(`output-value-${num}`);
     // console.log(num)
     outputValueNode.innerText = slctnsArray[i];
+    console.log(outputValueNode)
   })
-  console.log(outputValueNode)
 }
 
 
