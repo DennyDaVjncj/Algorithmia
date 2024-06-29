@@ -53,6 +53,6 @@ sortButton.addEventListener('click',sortInputArray);//our web app is now program
  * step 22
  * now configuring the swap logic
  * as well as the updateUI() logic
- * I'm currently trying to understand how to get the ui to update with current user selections
+ * UpdateUI() functioning properly
  * I need go study swapping logic
  */
