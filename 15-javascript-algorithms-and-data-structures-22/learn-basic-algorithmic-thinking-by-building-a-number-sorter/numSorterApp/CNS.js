@@ -7,8 +7,8 @@ const sortInputArray = (event) => {
     ...document.getElementsByClassName("userSlctns")
   ].map(dropdown => Number(dropdown.value));
   
-  var sortedVals=botSorting(userSlctns)
-  updateUI(sortedVals);
+  // var sortedVals=botSorting(userSlctns)
+  updateUI(userSlctns);
   // console.log(outputValueNode)
   // console.log(outputValueNode.innerText)
 }
