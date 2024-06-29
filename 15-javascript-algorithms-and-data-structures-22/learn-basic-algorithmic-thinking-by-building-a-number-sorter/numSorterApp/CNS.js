@@ -17,8 +17,8 @@ const updateUI = (slctnsArray = []) => {
   slctnsArray.forEach((num,i) => {
     const slctnOutput = document.getElementById(`output-value-${i}`);
     // console.log(num)
-    slctnOutput.innerText = slctnsArray[i];
-    console.log(outputValueNode)
+    slctnOutput.innerText = num;
+    // console.log(outputValueNode)
   })
 }
 
