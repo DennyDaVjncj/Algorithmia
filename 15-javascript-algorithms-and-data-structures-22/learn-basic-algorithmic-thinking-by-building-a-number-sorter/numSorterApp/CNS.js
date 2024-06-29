@@ -50,7 +50,8 @@ const botSorting=(userRqsts=[])=>{
 sortButton.addEventListener('click',sortInputArray);//our web app is now programmed to watch for a click event on a chosen element on our UI
 
 /**
- * step 19
+ * step 22
  * now configuring the swap logic
- * sortInput Array updated with corrected argument for hoisted functions
+ * as well as the updateUI() logic
+ * I'm currently trying to understand how to get the ui to update with current user selections
  */
