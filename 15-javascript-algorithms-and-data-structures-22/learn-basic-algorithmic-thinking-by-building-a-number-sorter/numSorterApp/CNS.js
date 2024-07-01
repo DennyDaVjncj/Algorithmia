@@ -27,15 +27,7 @@ const botSorting=(userRqsts=[])=>{
   // var currentUsrSlctn; this line is tentative
   for(let i=0;i<userRqsts.length;i++){
     for(let j=1;j<userRqsts.length-1;j++){
-      // console.log(userRqsts,userRqsts[j],userRqsts[j])
-      if(userRqsts[i]>userRqsts[j]){
-        currentUsrSlctn=userRqsts[i];
-        userRqsts[i]=userRqsts[j]
-        userRqsts[j]=currentUsrSlctn
-        // console.log(userRqsts[i],userRqsts[j])
-        // var greaterVal=userRqsts[j+1];
-
-        // currentUsrSlctn=greaterVal;
+      if
         
       }
     }
@@ -51,4 +43,5 @@ sortButton.addEventListener('click',sortInputArray);//our web app is now program
  * as well as the updateUI() logic
  * UpdateUI() functioning properly
  * I need go study swapping logic
+ * swapping logic in tentative state
  */
