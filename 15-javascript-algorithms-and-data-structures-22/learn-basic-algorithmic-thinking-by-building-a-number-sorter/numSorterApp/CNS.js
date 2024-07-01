@@ -27,7 +27,11 @@ const botSorting=(userRqsts=[])=>{
   // var currentUsrSlctn; this line is tentative
   for(let i=0;i<userRqsts.length;i++){
     for(let j=1;j<userRqsts.length-1;j++){
-      if
+      if(userRqsts[j]>userRqsts[j+1]){
+        const crrntUsrSlctn=userRqsts[j];
+        userRqsts[j]=userRqsts[j+1];
+        userRqsts[j+1]=crrntUsrSlctn;
+      }
         
       }
     }
