@@ -9,8 +9,6 @@ const sortInputArray = (event) => {
   
   // var sortedVals=botSorting(userSlctns)
   updateUI(userSlctns);
-  // console.log(outputValueNode)
-  // console.log(outputValueNode.innerText)
 }
 
 const updateUI = (slctnsArray = []) => {
