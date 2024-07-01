@@ -24,7 +24,7 @@ const botSorting=(userRqsts=[])=>{
    * Lucius
    * currentUsrSlctn hold temp value
    */
-  var currentUsrSlctn;
+  // var currentUsrSlctn; this line is tentative
   for(let i=0;i<userRqsts.length;i++){
     for(let j=1;j<userRqsts.length-1;j++){
       // console.log(userRqsts,userRqsts[j],userRqsts[j])
@@ -41,7 +41,7 @@ const botSorting=(userRqsts=[])=>{
     }
   }
 
-  return userRqsts;
+  // return userRqsts;
 }
 sortButton.addEventListener('click',sortInputArray);//our web app is now programmed to watch for a click event on a chosen element on our UI
 
