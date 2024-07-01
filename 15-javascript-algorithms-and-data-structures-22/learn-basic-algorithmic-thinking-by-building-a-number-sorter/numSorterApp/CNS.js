@@ -32,12 +32,8 @@ const botSorting=(userRqsts=[])=>{
         userRqsts[j]=userRqsts[j+1];
         userRqsts[j+1]=crrntUsrSlctn;
       }
-        
-      }
     }
   }
-
-  // return userRqsts;
 }
 sortButton.addEventListener('click',sortInputArray);//our web app is now programmed to watch for a click event on a chosen element on our UI
 
