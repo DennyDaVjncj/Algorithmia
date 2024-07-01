@@ -38,7 +38,7 @@ const botSorting=(userRqsts=[])=>{
 sortButton.addEventListener('click',sortInputArray);//our web app is now programmed to watch for a click event on a chosen element on our UI
 
 /**
- * step 22
+ * step 23
  * now configuring the swap logic
  * as well as the updateUI() logic
  * UpdateUI() functioning properly
