@@ -20,21 +20,17 @@ const updateUI = (slctnsArray = []) => {
 
 
 const botSorting=(userRqsts=[])=>{
-  /**
-   * Lucius
-   * currentUsrSlctn hold temp value
-   */
-  // var currentUsrSlctn; this line is tentative
-  for(let i=0;i<userRqsts.length;i++){
-    for(let j=1;j<userRqsts.length-1;j++){
-      if(userRqsts[j]>userRqsts[j+1]){
-        const crrntUsrSlctn=userRqsts[j];
-        userRqsts[j]=userRqsts[j+1];
-        userRqsts[j+1]=crrntUsrSlctn;
+    for(let i=0;i<userRqsts.length;i++){
+      //I'm not sure as to the reasoning for the outer & inner loops
+      for(let j=1;j<userRqsts.length-1;j++){
+        if(userRqsts[j]>userRqsts[j+1]){
+          const crrntUsrSlctn=userRqsts[j];
+          userRqsts[j]=userRqsts[j+1];
+          userRqsts[j+1]=crrntUsrSlctn;
+        }
       }
     }
   }
-}
 sortButton.addEventListener('click',sortInputArray);//our web app is now programmed to watch for a click event on a chosen element on our UI
 
 /**
