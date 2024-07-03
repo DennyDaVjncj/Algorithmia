@@ -39,9 +39,5 @@ sortButton.addEventListener('click',sortInputArray);//our web app is now program
 
 /**
  * step 23
- * now configuring the swap logic
- * as well as the updateUI() logic
- * UpdateUI() functioning properly
- * I need go study swapping logic
  * swapping logic in tentative state
  */
